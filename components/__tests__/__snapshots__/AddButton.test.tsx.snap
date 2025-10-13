@@ -35,6 +35,7 @@ exports[`renders correctly for player 1 1`] = `
       "opacity": 1,
     }
   }
+  testID="add-button-1"
 >
   <Text
     className="text-center text-7xl font-bold text-player-one"
@@ -79,6 +80,7 @@ exports[`renders correctly for player 2 1`] = `
       "opacity": 1,
     }
   }
+  testID="add-button-2"
 >
   <Text
     className="text-center text-7xl font-bold text-player-two"

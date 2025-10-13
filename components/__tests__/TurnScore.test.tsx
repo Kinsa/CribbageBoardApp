@@ -6,7 +6,7 @@ describe('TurnScore Component', () => {
     const { getByTestId, getByText } = render(<TurnScore player={1} points={7} />);
 
     // Check component renders
-    expect(getByTestId('turn-score')).toBeOnTheScreen();
+    expect(getByTestId(`turn-score-1`)).toBeOnTheScreen();
 
     // Check turn score text
     expect(getByText('7')).toBeOnTheScreen();
@@ -17,7 +17,7 @@ describe('TurnScore Component', () => {
     { player: 2, points: 42, expectedClass: 'text-player-two' },
   ])('player $player is styled correctly', ({ player, points, expectedClass }) => {
     const { getByTestId } = render(<TurnScore player={player} points={points} />);
-    const element = getByTestId('turn-score');
+    const element = getByTestId(`turn-score-${player}`);
     expect(element.props.className).toContain(expectedClass);
   });
 });

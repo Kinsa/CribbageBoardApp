@@ -9,7 +9,7 @@ interface TurnScoreProps {
 export default function TurnScore({ player, points }: TurnScoreProps) {
   return (
     <Text
-      testID="turn-score"
+      testID={`turn-score-${player}`}
       className={cn(
         'absolute font-bold text-7xl',
         player === 1

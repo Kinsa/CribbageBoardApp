@@ -6,7 +6,23 @@ const tailwind = require('eslint-plugin-tailwindcss');
 module.exports = defineConfig([
   expoConfig,
   {
-    ignores: ['dist/*'],
+    ignores: ['dist/*', 'coverage/*'],
+  },
+  {
+    files: ['**/__tests__/**/*.{js,jsx,ts,tsx}', '**/*.test.{js,jsx,ts,tsx}', 'jest.setup.js'],
+    languageOptions: {
+      globals: {
+        jest: 'readonly',
+        test: 'readonly',
+        expect: 'readonly',
+        describe: 'readonly',
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
+        it: 'readonly',
+      },
+    },
   },
   {
     files: ['**/*.{js,jsx,ts,tsx}'],

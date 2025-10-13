@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react-native';
+import { render, screen } from '@testing-library/react-native';
 import TotalScore from '../TotalScore';
 
 describe('TotalScore Component', () => {
@@ -6,9 +6,10 @@ describe('TotalScore Component', () => {
     const { getByTestId, getByText } = render(<TotalScore player={1} points={7} />);
 
     // Check component renders
-    expect(getByTestId('total-score')).toBeOnTheScreen();
+    expect(getByTestId(`total-score-1`)).toBeOnTheScreen();
 
     // Check maximum score text
+    expect(getByText('7')).toBeOnTheScreen();
     expect(getByText(' / 121')).toBeOnTheScreen();
   });
 
@@ -17,8 +18,11 @@ describe('TotalScore Component', () => {
     { player: 2, points: 42, expectedClass: 'text-player-two' },
   ])('player $player is styled correctly', ({ player, points, expectedClass }) => {
     const { getByTestId } = render(<TotalScore player={player} points={points} />);
-    const element = getByTestId('total-score');
+    const element = getByTestId(`total-score-${player}`);
     expect(element.props.className).toContain(expectedClass);
+
+    const text = screen.getByText(`${points}`);
+    expect(text).toBeOnTheScreen();
   });
 });
 

@@ -43,6 +43,15 @@ npm run lint
 
 # Format code
 mise run format
+
+# Update all snapshots
+npm test -- -u
+
+# Update snapshots for specific file
+npm test TurnScore.test.tsx -- -u
+
+# Update snapshots interactively (review each one)
+npm test -- -u --watch
 ```
 
 ## Tech Stack

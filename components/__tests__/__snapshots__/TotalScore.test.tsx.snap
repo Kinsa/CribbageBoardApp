@@ -1,27 +1,39 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`renders correctly for player 1 with 5 points 1`] = `
-<Text
-  className="absolute font-bold text-base text-player-one left-40 rotate-180 bottom-[75%]"
+<View
+  className="absolute font-bold text-base flex flex-row items-end text-player-one left-40 rotate-180 bottom-[75%]"
+  testID="total-score-1"
 >
-  5
+  <Text
+    className="font-bold text-base text-player-one"
+    testID="total-score-1-text"
+  >
+    5
+  </Text>
   <Text
     className="text-sm text-surface-subtle font-normal"
   >
      / 121
   </Text>
-</Text>
+</View>
 `;
 
 exports[`renders correctly for player 2 with 42 points 1`] = `
-<Text
-  className="absolute font-bold text-base text-player-two right-40 top-[75%]"
+<View
+  className="absolute font-bold text-base flex flex-row items-end text-player-two right-40 top-[75%]"
+  testID="total-score-2"
 >
-  42
+  <Text
+    className="font-bold text-base text-player-two"
+    testID="total-score-2-text"
+  >
+    42
+  </Text>
   <Text
     className="text-sm text-surface-subtle font-normal"
   >
      / 121
   </Text>
-</Text>
+</View>
 `;

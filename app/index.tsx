@@ -56,7 +56,8 @@ export default function HomeScreen() {
         setPlayer1TurnPoints(newPoints);
         console.log(`Player 1 turn points ${newPoints}`);
       } else {
-        setPlayer1TurnPoints(1);
+        setPlayer1TurnPoints(points);
+        console.log(`Player 1 turn points ${points}`);
       }
 
       const newPoints = player1Points + points;
@@ -73,7 +74,8 @@ export default function HomeScreen() {
         setPlayer2TurnPoints(newPoints);
         console.log(`Player 2 turn points ${newPoints}`);
       } else {
-        setPlayer2TurnPoints(1);
+        setPlayer2TurnPoints(points);
+        console.log(`Player 2 turn points ${points}`);
       }
 
       const newPoints = player2Points + points;

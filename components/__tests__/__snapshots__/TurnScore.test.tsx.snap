@@ -3,7 +3,7 @@
 exports[`renders correctly for player 1 with 5 points 1`] = `
 <Text
   className="absolute font-bold text-7xl text-player-one left-8 rotate-180 bottom-[65%]"
-  testID="turn-score"
+  testID="turn-score-1"
 >
   5
 </Text>
@@ -12,7 +12,7 @@ exports[`renders correctly for player 1 with 5 points 1`] = `
 exports[`renders correctly for player 2 with 42 points 1`] = `
 <Text
   className="absolute font-bold text-7xl text-player-two right-8 top-[65%]"
-  testID="turn-score"
+  testID="turn-score-2"
 >
   42
 </Text>

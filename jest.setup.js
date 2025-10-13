@@ -1,5 +1,3 @@
-import jest from 'jest';
-
 // Mock expo-sensors
 jest.mock('expo-sensors', () => ({
   Accelerometer: {
@@ -16,5 +14,12 @@ jest.mock('expo-haptics', () => ({
     Light: 'light',
     Medium: 'medium',
     Heavy: 'heavy',
+  },
+}));
+
+// Mock Expo Router
+jest.mock('expo-router', () => ({
+  Stack: {
+    Screen: ({ children }) => children,
   },
 }));

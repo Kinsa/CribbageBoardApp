@@ -85,7 +85,7 @@ const CribbageBoard = ({ player1Points, player2Points, width = 52 }: CribbageBoa
           {player1Progress > 0 && (
             <Path
               d={player1TrackPath}
-              stroke={colors.brand.green}
+              stroke={colors.player.one}
               strokeWidth="4"
               fill="none"
               strokeLinecap="round"
@@ -96,7 +96,7 @@ const CribbageBoard = ({ player1Points, player2Points, width = 52 }: CribbageBoa
           {player2Progress > 0 && (
             <Path
               d={player2TrackPath}
-              stroke={colors.brand.blue}
+              stroke={colors.player.two}
               strokeWidth="4"
               fill="none"
               strokeLinecap="round"
