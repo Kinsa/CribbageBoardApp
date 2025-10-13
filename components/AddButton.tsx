@@ -10,6 +10,8 @@ interface ButtonProps {
 export default function AddButton({ player, pressFunction, longPressFunction }: ButtonProps) {
   return (
     <TouchableOpacity
+      testID="add-button"
+      accessibilityRole="button"
       className={cn(
         'm-2 px-5 py-3 bg-surface-lowContrast w-[160px] h-[160px] rounded-full flex items-center justify-center',
         player === 1 ? 'rotate-180 self-start' : 'self-end'
@@ -23,7 +25,7 @@ export default function AddButton({ player, pressFunction, longPressFunction }: 
       <Text
         className={cn(
           'text-center text-7xl font-bold',
-          player === 1 ? 'text-brand-green' : 'text-brand-blue'
+          player === 1 ? 'text-player-one' : 'text-player-two'
         )}>
         +
       </Text>

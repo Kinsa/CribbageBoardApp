@@ -33,7 +33,7 @@ mise run iphone
 mise run start
 
 # Run on iOS simulator
-npm run ios
+mise run ios
 
 # Run on connected iPhone via USB
 mise run iphone
@@ -42,7 +42,7 @@ mise run iphone
 npm run lint
 
 # Format code
-npm run format
+mise run format
 ```
 
 ## Tech Stack
@@ -52,6 +52,7 @@ npm run format
 - NativeWind (Tailwind CSS for React Native)
 - Expo Router for navigation
 - SVG graphics with react-native-svg
+- [React Native Testing Library](https://callstack.github.io/react-native-testing-library/index) for testing
 
 ## Contributing
 

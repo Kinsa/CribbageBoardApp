@@ -34,6 +34,10 @@ description = "Run on Android emulator"
 run = "npm test"
 description = "Run tests"
 
+[tasks.coverage]
+run = "npm run test -- --coverage"
+description = "Test coverage report"
+
 [tasks.lint-fix]
 run = "npm run lint:fix"
 description = "Fix code quality issues and format with prettier"

@@ -1,7 +1,7 @@
 export const colors = {
-  brand: {
-    green: '#4C9D00',
-    blue: '#0073E6',
+  player: {
+    one: '#4C9D00',
+    two: '#0073E6',
   },
   surface: {
     lowContrast: '#FAF8F8',
