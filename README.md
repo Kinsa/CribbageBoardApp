@@ -61,7 +61,7 @@ npm test -- -u --watch
 
 [View the Figma file](https://www.figma.com/design/VzH7RgiOq6Q2B3O73NJe36/Cribbage-Board?node-id=19-57&m=dev)
 
-The Figma file is publicly viewable, and the Full Comp page contains developer annotations.
+The Figma file is publicly viewable, and the Full Comp page contains developer annotations, which are available in [Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode) (requires a paid seat to access).
 
 ### Design System
 
